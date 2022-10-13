@@ -1,8 +1,8 @@
 ---
-name: Create Standup Notes
-about: Do standup notes before CSS in lab 3
+name: Create Tasks to do
+about: To be completed sequentially
 title: ''
-labels: standupnotes
+labels: external, inline, standupnotes
 assignees: priyakumar0817
 
 ---
