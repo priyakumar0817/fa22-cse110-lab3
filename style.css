@@ -1,12 +1,36 @@
+/* Priya Senthilkumar, Lab 3 CSS External File*/
+/* Attribute Selector*/
+label[for=question] {
+    color: maroon;
+}
+
+/* color hue, saturation, lightness, alpha values */
+h3 {
+    margin-right: 50px;
+    color: hsl(338, 44%, 37%);
+}
+/* Display block */
+/* min width sizing */
+span.meeting-top {
+    display:block;
+    background-color:moccasin;
+    min-width: 300px;
+}
 /* element selector */
+/* text align & decoration */
 h1 {
     background-color: gainsboro;
     text-decoration:underline overline;
     text-align: center;
+    /* max width sizing */
     max-width: 600px;
  
 }
+/* Background */
+/* Relative Unit (em) */
 body {
+
+    /*Grid*/
     display:grid;
     grid-template-rows: auto;
     background-color: lightskyblue;
@@ -14,19 +38,82 @@ body {
     justify-content: space-evenly;
     font-family: 'Roboto Condensed', sans-serif;
 }
-/*attribute selector*/
-label[for=question] {
-    color: maroon;
+/* Relative Unit (vw,vh) */
+/* Padding right */
+unfinished-business, ol {
+    position:sticky;
+    background-color: azure;
+    height: 20vw;
+    width: 30vw;
+    border: 0.5vh solid palevioletred;
+    padding-right: 50px;
+    margin: 16px;
 }
-h3 {
-    margin-right: 50px;
-    color: hsl(338, 44%, 37%);
+/* Padding top, bottom*/
+li#think {
+    padding-top:27px;
+    padding-bottom:27px;
+   
 }
-span.meeting-top {
-    display:block;
-    background-color:moccasin;
-    min-width: 300px;
+/* ID selector */
+/* Padding left */
+/* text color */
+li#group5 {
+    padding-left: 15px;
+    color:darkmagenta;
 }
+
+li#groupx {
+    padding-top: 10px;
+    color: darkred;
+}
+/* Padding short hand notation */
+li#total {
+    color:hsl(338, 44%, 37%);
+    padding: 3px 11px 12px 13px;
+}
+/* Absolute Unit (cm, pc, px) */
+/* .class Selector */
+attendance-list,ul { 
+    
+    margin-bottom: 70px;
+    margin-top: 50px;
+    border-style:solid;
+    border-color: rgb(216, 163, 136);
+    border-width: 2px;
+    border-radius:35px;
+    font-size : 1.2em;
+    height: 2cm;
+    background-color: lightpink;
+    width: 10pc;
+
+}
+/* selector list */
+/* Margin Left */
+meeting-topic, b {
+    margin-left: 70px;
+    font-size: 117%;
+}
+/*Flexbox*/
+.flexboxpractice {
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+}
+/*Margin Right & Auto */
+.flexboxpractice > div {
+    background-color: azure;
+    width: 400px;
+    height: 100px;
+    margin-right: auto;
+    
+}
+/*combining two selectors */
+/* Margin Short Hand Notation */
+h4.media {
+    margin: 30px 70px 13px 150px;
+ }
 /*pseudo class selector */
 nav a:first-child:hover {
     background-color: lightskyblue;
@@ -43,41 +130,8 @@ details summary {
 fieldset > form {
     background-color: linen;
 }
-/* .class selector */
-attendance-list,ul { 
-    
-    margin-bottom: 70px;
-    margin-top: 50px;
-    border-style:solid;
-    border-color: rgb(216, 163, 136);
-    border-width: 2px;
-    border-radius:35px;
-    font-size : 1.2em;
-    height: 2cm;
-    background-color: lightpink;
-    width: 10pc;
-    
-
-}
  h4 + div {
     background-color: lightpink;
-}
-/* ID selector */
-li#group5 {
-    padding-left: 15px;
-
-}
-
-li#groupx {
-    padding-top: 10px;
-}
-li#total {
-    padding: 3px 11px 12px 13px;
-}
-/* selector list */
-meeting-topic, b {
-    margin-left: 70px;
-    font-size: 117%;
 }
 
 /* box model */
@@ -85,27 +139,9 @@ h4.unfinish {
     margin: auto 70px;
 
 }
-li#think {
-    padding-top:27px;
-    padding-bottom:27px;
-   
-}
-unfinished-business, ol {
-    position:sticky;
-    background-color: azure;
-    height: 28vw;
-    width: 30vw;
-    border: 0.5vh solid palevioletred;
-    padding: 50px;
-    margin: 16px;
-}
-/*combining two selectors */
-h4.media {
-   margin: 30px 70px 13px 150px;
-}
 
+/*Display inline-block*/
 p.presentornot {
-
     background-color:lightpink;
     display:inline-block;
 }
@@ -113,25 +149,11 @@ p.presentornot {
 h3.addques {
     position:fixed;
 }
-
+/* Pseudo class active*/
 summary:active {
     background-color: hotpink;
 }
-
-.flexboxpractice {
-    background-color: pink;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    
-}
-.flexboxpractice > div {
-    background-color: azure;
-    width: 400px;
-    height: 100px;
-    margin: auto;
-    
-}
-
+/*Media Query*/
 @media screen and (max-width: 900px) {
     body {
         background-color: gainsboro;
