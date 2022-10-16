@@ -116,11 +116,11 @@ h4.media {
  }
 /*pseudo class selector */
 nav a:first-child:hover {
-    background-color: lightskyblue;
+    background-color: lightgoldenrodyellow;
 }
 /*general sibling combinator */
 a:first-child ~ a:hover {
-    background-color: lightskyblue;
+    background-color: lightgoldenrodyellow;
 }
 /* descendant selector */
 details summary {
