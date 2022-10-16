@@ -43,7 +43,7 @@ body {
 unfinished-business, ol {
     position:sticky;
     background-color: azure;
-    height: 40vw;
+    height: 20vw;
     width: 30vw;
     border: 0.5vh solid palevioletred;
     padding-right: 50px;
