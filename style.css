@@ -1,3 +1,4 @@
+/* element selector */
 h1 {
     background-color: gainsboro;
     text-decoration:underline overline;
@@ -13,26 +14,42 @@ body {
     justify-content: space-evenly;
     font-family: 'Roboto Condensed', sans-serif;
 }
+/*attribute selector*/
+label[for=question] {
+    color: maroon;
+}
 h3 {
-    
     margin-right: 50px;
-    color: hsl(133, 52%, 29%);
+    color: hsl(338, 44%, 37%);
 }
 span.meeting-top {
     display:block;
     background-color:moccasin;
     min-width: 300px;
 }
-nav:hover a {
+/*pseudo class selector */
+nav a:first-child:hover {
     background-color: lightskyblue;
 }
-
+/*general sibling combinator */
+a:first-child ~ a:hover {
+    background-color: lightskyblue;
+}
+/* descendant selector */
+details summary {
+    background-color:lightyellow;
+}
+/*child combinator */
+fieldset > form {
+    background-color: linen;
+}
+/* .class selector */
 attendance-list,ul { 
     
     margin-bottom: 70px;
     margin-top: 50px;
     border-style:solid;
-    border-color: rgb(243, 44, 173);
+    border-color: rgb(216, 163, 136);
     border-width: 2px;
     border-radius:35px;
     font-size : 1.2em;
@@ -42,6 +59,10 @@ attendance-list,ul {
     
 
 }
+ h4 + div {
+    background-color: lightpink;
+}
+/* ID selector */
 li#group5 {
     padding-left: 15px;
 
@@ -53,14 +74,16 @@ li#groupx {
 li#total {
     padding: 3px 11px 12px 13px;
 }
+/* selector list */
 meeting-topic, b {
-    margin-left: 50px;
+    margin-left: 70px;
     font-size: 117%;
 }
-/* box model */
 
+/* box model */
 h4.unfinish {
-    margin: auto;
+    margin: auto 70px;
+
 }
 li#think {
     padding-top:27px;
@@ -69,14 +92,14 @@ li#think {
 }
 unfinished-business, ol {
     position:sticky;
-    background-color: lightpink;
+    background-color: azure;
     height: 28vw;
     width: 30vw;
-    border: 0.5vh solid magenta;
+    border: 0.5vh solid palevioletred;
     padding: 50px;
     margin: 16px;
 }
-
+/*combining two selectors */
 h4.media {
    margin: 30px 70px 13px 150px;
 }
@@ -110,10 +133,13 @@ summary:active {
 }
 
 @media screen and (max-width: 900px) {
-    body {background-color: gainsboro;}
+    body {
+        background-color: gainsboro;
+    }
 }
 @media screen and (max-width: 600px) {
-    body {
+    /* universal selector */
+    * {
         background-color:honeydew;
     }
 }
