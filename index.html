@@ -5,23 +5,25 @@
     <meta name="author" content="Priya">
     <link type="image/png" sizes="16x16" rel="icon" href="./icons8-year-of-tiger-16.png">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
     <!Colors>
-    <h1 style="color:rgb(105, 19, 74);"> Minutes Discussion 1 Group 5</h1>
+    <h1 style="color:rgb(203, 85, 202);"> Minutes Discussion 1 Group 5</h1>
     <h2 style="color:#520606;"> 10/5/2022</h2>
     </header>
     <main>
         <hr>
         <section>
-           
+            <h3>Attendance List:</h3>
             <div class="attendance-list">
-                <h3>Attendance List:</h3>
             <ul>
-                <li>Group 5</li>
-                <li>Group x</li>
-                <li>~35 participants</li>
+                <li id = "group5">Group 5</li>
+                <li id = "groupx">Group x</li>
+                <li id = "total">~35 participants</li>
             </ul>
         </div> 
         </section>
@@ -30,7 +32,7 @@
         <hr>
         <div class="meeting-topic">
             <b>Meeting Topics:</b>
-            <span>
+            <span class = "meeting-top">
                 TA introduction,
                 Course logistics,
                 Group set up and introductions,
@@ -39,15 +41,25 @@
             <hr>
         </div>
     
+        <section>
 
-    <section>
-    <h4><strong>Unfinished Business:</strong></h4>
+            <div class = "flexboxpractice">More
+            <div class = "child">Practice
+            <div class = "child2">With CSS
+                
+            </div>
+        </div>
+    </div>
+        </section>
+
+    <section class = "unfinish">
+    <h4 class = "unfinish"><strong>Unfinished Business:</strong></h4>
     
     <div class="unfinished-business">
         <ol>
             <li>Set up when2meet for availabilities</li>
             <li>Pick a time for weekly scrum meetings</li>
-            <li>Think <i>deeper</i> and <br><em>reflect</em> on past lectures</li>
+            <li id = "think">Think <i>deeper</i> and <br><em>reflect</em> on past lectures</li>
             <li>Get to know your group members</li>
         </ol>
     </div>
@@ -55,7 +67,7 @@
 </section>
 
 <section>
-    <h4>Medias:</h4>
+    <h4 class = "media">Medias:</h4>
     <br>
     <img src="./d1Priyanka.png" alt="Priyanka TA on Slack" width="300" height="400"><br>
 
@@ -75,7 +87,7 @@
 
 <section>
     <hr>
-<h3>Additional Questions? Fill out this Form: </h3>
+<h3 class = "addques">Additional Questions? Fill out this Form: </h3>
 <fieldset>
 <form action = "./action.php">
     First Name:
@@ -84,7 +96,7 @@
         <option value = "group5">Group 5</option>
         <option value = "groupx">Group x</option>
     </select> <br>
-    <p>Were You Present in This Meeting?
+    <p class = "presentornot">Were You Present in This Meeting?
     <input type = "checkbox" id = "attended" name="attended"><br>
     <p>Choose your Role:<br>
     <input type = "radio" id = "leads" name="leads" value="Lead">
