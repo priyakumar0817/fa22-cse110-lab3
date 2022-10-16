@@ -1,21 +1,119 @@
 h1 {
-    border: 3px solid black;
-    background-color: antiquewhite;
+    background-color: gainsboro;
+    text-decoration:underline overline;
+    text-align: center;
+    max-width: 600px;
+ 
 }
 body {
-    background-color: blanchedalmond;
+    display:grid;
+    grid-template-rows: auto;
+    background-color: lightskyblue;
+    grid-gap: 1em;
+    justify-content: space-evenly;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 h3 {
+    
+    margin-right: 50px;
     color: hsl(133, 52%, 29%);
 }
-ul { 
-    border: solid palevioletred;
+span.meeting-top {
+    display:block;
+    background-color:moccasin;
+    min-width: 300px;
+}
+nav:hover a {
+    background-color: lightskyblue;
+}
+
+attendance-list,ul { 
+    
+    margin-bottom: 70px;
+    margin-top: 50px;
+    border-style:solid;
+    border-color: rgb(243, 44, 173);
+    border-width: 2px;
+    border-radius:35px;
     font-size : 1.2em;
     height: 2cm;
+    background-color: lightpink;
     width: 10pc;
+    
 
+}
+li#group5 {
+    padding-left: 15px;
+
+}
+
+li#groupx {
+    padding-top: 10px;
+}
+li#total {
+    padding: 3px 11px 12px 13px;
 }
 meeting-topic, b {
+    margin-left: 50px;
     font-size: 117%;
 }
+/* box model */
 
+h4.unfinish {
+    margin: auto;
+}
+li#think {
+    padding-top:27px;
+    padding-bottom:27px;
+   
+}
+unfinished-business, ol {
+    position:sticky;
+    background-color: lightpink;
+    height: 28vw;
+    width: 30vw;
+    border: 0.5vh solid magenta;
+    padding: 50px;
+    margin: 16px;
+}
+
+h4.media {
+   margin: 30px 70px 13px 150px;
+}
+
+p.presentornot {
+
+    background-color:lightpink;
+    display:inline-block;
+}
+
+h3.addques {
+    position:fixed;
+}
+
+summary:active {
+    background-color: hotpink;
+}
+
+.flexboxpractice {
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+}
+.flexboxpractice > div {
+    background-color: azure;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    
+}
+
+@media screen and (max-width: 900px) {
+    body {background-color: gainsboro;}
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-color:honeydew;
+    }
+}
